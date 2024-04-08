@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap');
 
 :root{
-    --pink:#9e9d9d ;
+    --pink:rgb(158, 157, 157) ;
     --violet:#223645 ;
 }
 *{
@@ -79,6 +79,27 @@ header .fa-bars{
     transition: .2s;
 
 }
+.home{
+    min-height: 100vh;
+    background: linear-gradient(rgba(158, 157, 157,.4),rgba(158, 157, 157,.8)),url('/image/backgroud_image_ensam.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    z-index: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+
+
+
+
+
+
+
+
+
+
 header .fa-times{
     transform: rotate(180deg);
     color: var(--violet);
