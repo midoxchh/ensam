@@ -93,6 +93,7 @@ header .fa-times{
         background: #fff;
         border-radius: 1rem;
         opacity: 0;
+        transition: .2s linear;
     }
     header .navbar ul{
         flex-flow: column;
@@ -107,5 +108,9 @@ header .fa-times{
         font-size: 3rem;
         display: block;
     
+    }
+    header .nav-toggle{
+        top: 5.5rem;
+        opacity: 0.7;
     }
 }
