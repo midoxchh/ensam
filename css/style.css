@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap');
 
 :root{
-    --pink:#ff046f ;
-    --violet:#c63bfa ;
+    --pink:#9e9d9d ;
+    --violet:#223645 ;
 }
 *{
     font-family: "Roboto", sans-serif;
@@ -24,6 +24,7 @@ html{
 }
 body{
     background: #333;
+    height: 3000px;
 }
 header{
     width: 92%;
@@ -37,6 +38,13 @@ header{
     justify-content: space-between;
     padding: 1rem 2rem;
     z-index: 1000;
+    transition: .2s;
+}
+.header-active{
+    top:0;
+    width: 100%;
+    border-radius: 0;
+    box-shadow: 0 .1rem .3rem rgba(0, 0 ,0, .3);
 }
 header .navbar ul{
     display: flex;
