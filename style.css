@@ -57,6 +57,10 @@ a.active, a:hover{
 #check{
     display: none;
 }
+footer{
+    width: 100%;
+    background-color: red;
+}
 @media (max-width: 952px) {
     label.logo{
         font-size: 30px;
