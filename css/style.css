@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap');
+
+:root{
+    --pink:#ff046f ;
+    --violet:#c63bfa ;
+}
+*{
+    font-family: "Roboto", sans-serif;
+    text-transform: capitalize;
+    text-decoration: none;
+    outline: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+*::selection{
+    background: var(--pink);
+    color: #fff;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+body{
+    background: #333;
+}
+header{
+    width: 92%;
+    background: #fff;
+    position: fixed;
+    top: 2rem;left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    z-index: 1000;
+}
+header .navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header .navbar ul li{
+    margin: 0 1rem;
+}
+header .navbar ul li a{
+    font-size: 2rem ;
+    color: var(--pink);
+}
+header .navbar ul li .active,
+header .navbar ul li a:hover{
+    color: var(--violet);
+}
+header .logo{
+    font-size: 2.5rem;
+    color : var(--violet);
+    text-transform: uppercase;
+}
+header .logo i{
+    color: var(--pink);
+    padding: 0 .2rem;
+}
+header .fa-bars{
+    font-size: 3rem;
+    cursor: pointer;
+    color: var(--pink);
+    display: none;
+    transition: .2s;
+
+}
+header .fa-times{
+    transform: rotate(180deg);
+    color: var(--violet);
+}
+/* media query */
+@media (max-width:768px) {
+    html{
+        font-size: 55%;
+        /* transition: 1s; */
+    }
+    header .fa-bars{
+        display: block;
+
+    }
+    header .navbar{
+        position: fixed;
+        top:-100rem;
+        left: 0;
+        width: 100%;
+        background: #fff;
+        border-radius: 1rem;
+        opacity: 0;
+    }
+    header .navbar ul{
+        flex-flow: column;
+        padding: 2rem 0;
+    }
+    header .navbar ul li{
+        margin: 1rem 0;
+        width: 100%;
+        text-align: center;
+    }
+    header .navbar ul li a{
+        font-size: 3rem;
+        display: block;
+    
+    }
+}
