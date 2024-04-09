@@ -81,7 +81,7 @@ header .fa-bars{
 }
 .home{
     min-height: 100vh;
-    background: linear-gradient(rgba(158, 157, 157,.4),rgba(158, 157, 157,.8)),url('/image/backgroud_image_ensam.jpg') no-repeat;
+    background: linear-gradient(rgba(158, 157, 157,.4),rgba(158, 157, 157,.9)),url('/image/backgroud_image_ensam.jpg') no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -122,14 +122,62 @@ header .fa-bars{
     transition: .2s;
     border: none;
     box-shadow: 0 .3rem 1rem rgba(0, 0, 0, .3);
-    
+
+}
+.home .content button:hover{
+    letter-spacing: .2rem;
 }
 
+.home .box-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
 
+.home .box-container .box{
+    height: 20rem;
+    width: 25rem;
+    background: #fff;
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: 0 .3rem 5rem rgba(0, 0, 0, .5);
+    margin: 2rem;
+    cursor: pointer;
+}
+.home .box-container .box i{
+    height:6rem;
+    width: 6rem;
+    line-height: 6rem;
+    text-align: center;
+    border-radius: 50%;
+    color: #fff;
+    background: var(--violet);
+    font-size: 3rem;
+    transition: .2s;
+    margin: 2rem 0;
+}
 
+.home .box-container .box h3{
+    font-size: 2rem;
+    color: var(--pink);
+    transition: .2s;
+}
 
-
-
+.home .box-container .box p{
+    font-size: 1.3rem;
+    padding: .7rem 2rem;
+    color: #666;
+}
+.home::before{
+    content: "";
+    position: absolute;
+    bottom: -25%; 
+    left: 50%;
+    transform: translateX(-50%);
+    border-top: 70vh solid #fff;
+    width: 120%;
+    border-radius: 50%;
+}
 
 
 
