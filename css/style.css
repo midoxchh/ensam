@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap');
 
 :root{
-    --pink:rgb(158, 157, 157) ;
-    --violet:#223645 ;
+    --pink:rgb(184, 145, 90) ;
+    --violet:#00002E ;
 }
 *{
     font-family: "Roboto", sans-serif;
@@ -81,7 +81,7 @@ header .fa-bars{
 }
 .home{
     min-height: 100vh;
-    background: linear-gradient(rgba(158, 157, 157,.4),rgba(158, 157, 157,.9)),url('/image/backgroud_image_ensam.jpg') no-repeat;
+    background: linear-gradient(rgba(184, 145, 90,.4),rgba(184, 145, 90,.9)),url('/image/backgroud_image_ensam.jpg') no-repeat; 
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -151,7 +151,7 @@ header .fa-bars{
     text-align: center;
     border-radius: 50%;
     color: #fff;
-    background: var(--violet);
+    background: var(--pink);
     font-size: 3rem;
     transition: .2s;
     margin: 2rem 0;
@@ -171,7 +171,7 @@ header .fa-bars{
 .home::before{
     content: "";
     position: absolute;
-    bottom: -25%; 
+    bottom: -25rem; 
     left: 50%;
     transform: translateX(-50%);
     border-top: 70vh solid #fff;
@@ -179,6 +179,15 @@ header .fa-bars{
     border-radius: 50%;
     z-index: -1;
 }
+
+
+
+
+
+
+
+
+
 
 
 
