@@ -64,7 +64,7 @@ header .navbar ul li a:hover{
 }
 header .logo{
     font-size: 2.5rem;
-    color : var(--violet);
+    color : var(--pink);
     text-transform: uppercase;
 }
 header .logo i{
@@ -168,6 +168,12 @@ header .fa-bars{
     padding: .7rem 2rem;
     color: #666;
 }
+.home .box-container .box:hover  i{
+    background: var(--violet);
+}
+.home .box-container .box:hover h3{
+    color: var(--violet);
+}
 .home::before{
     content: "";
     position: absolute;
@@ -193,7 +199,7 @@ header .fa-bars{
 
 header .fa-times{
     transform: rotate(180deg);
-    color: var(--violet);
+    color: var(--pink);
 }
 /* media query */
 @media (max-width:768px) {
@@ -232,5 +238,12 @@ header .fa-times{
     header .nav-toggle{
         top: 5.5rem;
         opacity: 0.7;
+    }
+    .home .content p{
+        padding: 1.5rem 2rem;
+
+    }
+    .home::before{
+        display: none;
     }
 }
