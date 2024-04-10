@@ -249,9 +249,64 @@ header .fa-bars{
 }
 .about .row .content button:hover{
     letter-spacing: .1rem;
-    opacity: 0.8;
+    opacity: .8;
 }
 
+
+.teacher{
+    background: #f9f9f9;
+}
+.teacher .card-container{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+}
+
+.teacher .card-container .card{
+    padding: 2rem;
+    margin: 2rem;
+    background: #fff;
+    text-align: center;
+    width: 28rem;
+    box-shadow: 0 .3rem .5rem rgba(0, 0 ,0, .3);
+}
+
+.teacher .card-container .card img {
+    height: 30rem;
+    width: 100%;
+    object-fit: cover;
+    filter: grayscale();
+    transition: .2s;
+}
+
+.teacher .card-container .card:hover img{
+    filter: grayscale(0);
+}
+
+
+
+
+.teacher .card-container .card h3 {
+    color: var(--pink);
+    font-size: 2rem;
+    padding: 5rem 0;
+}
+
+.teacher .card-container .card p {
+    font-size: 1.7rem;
+    color: #666; /* <-------- hna rah n9der nbadel ndir couleur secondere*/
+}
+.teacher .card-container .card .icons a{
+    font-size: 1.9rem;
+    padding: 1.5rem .5rem;
+    color: var(--pink);
+
+}
+.teacher .card-container .card .icons a:hover{
+    color: var(--violet);
+}
 
 
 
