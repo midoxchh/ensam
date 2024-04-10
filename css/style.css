@@ -284,7 +284,7 @@ header .fa-times{
         background: #fff;
         border-radius: 1rem;
         opacity: 0;
-        transition: .2s linear;
+        transition: all .9s ;
     }
     header .navbar ul{
         flex-flow: column;

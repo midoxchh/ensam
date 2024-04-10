@@ -32,6 +32,7 @@ $(document).ready(function(){
         //     }
     
         // });
+        
         $('section').each(function() {
             var top = $(window).scrollTop();
             var id = $(this).attr('id');
