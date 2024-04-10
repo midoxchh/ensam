@@ -23,8 +23,30 @@ html{
     font-size: 62.5%;
     overflow-x: hidden;
 }
+
+.heading{
+    font-size: 4rem;
+    color:var(--pink);
+    text-align: center;
+    padding: 0 1rem;
+    padding-top: 6rem;
+    letter-spacing: .2rem;
+    font-weight: 500;
+}
+
+.title{
+    padding: 0 1rem;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 400;
+    color: #aaa;
+}
+
+
+
+
 body{
-    background: #333;
+    background: #ffffff;
     height: 3000px;
 }
 header{
@@ -188,6 +210,25 @@ header .fa-bars{
 }
 
 
+.about .row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about .row .image img{
+    height: 70vh;
+    width: 50vw;
+}
+
+.about .row .content{
+    padding-left: 5rem;
+    
+}
+
+
+
+
+
 
 
 
@@ -238,7 +279,8 @@ header .fa-times{
     }
     header .nav-toggle{
         top: 5.5rem;
-        opacity: 0.7;
+        opacity: 1;
+
     }
     .home .content p{
         padding: 1.5rem 2rem;
