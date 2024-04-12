@@ -402,6 +402,20 @@ header .fa-bars{
 
 
 
+.contact{
+    background: #ffffff;
+}
+.contact .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem 0;
+}
+
+.contact .row .form-container{
+    width: ;
+}
+
 
 
 
