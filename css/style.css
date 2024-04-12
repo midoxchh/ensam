@@ -355,6 +355,51 @@ header .fa-bars{
     /* margin: 1rem; */
 }
 
+.review{
+    background: #f9f9f9;
+}
+.review .box-container{
+    display: flex ;
+    justify-content: center;
+    padding-top: 4rem ;
+    flex-wrap: wrap;
+}
+.review .box-container .box {
+    width: 28rem;
+    padding-bottom: 1rem;
+    text-align: center;
+    box-shadow: 0 .3rem .5rem rgba(0, 0 ,0, .3);
+    background: #fff;
+    margin: 4rem 2rem;
+}
+.review .box-container .box img{
+    height: 8.5rem;
+    width: 8.5rem;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: -4rem;
+    border: .6rem solid var(--pink);
+    border-left: .6rem solid var(--violet);
+    border-bottom: .6rem solid var(--violet);
+
+}
+
+.review .box-container .box h3{
+    font-size: 2rem;
+    color: var(--pink);
+    padding: 0 .5rem;
+}
+.review .box-container .box p{
+    font-size: 1.4rem;
+    color: #999;
+    padding:0 1.3rem;
+}
+.review .box-container .box .stars i{
+    font-size: 1.6rem;
+    color: var(--violet);
+    padding: 1.3rem .1rem;
+}
+
 
 
 
