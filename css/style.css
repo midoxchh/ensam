@@ -79,9 +79,9 @@ header{
     box-shadow: 0 .1rem .3rem rgba(0, 0 ,0, .3);
     opacity: 80%;
 }
-header .navbar{
+                                                            header .navbar{
 
-}
+                                                            }
 header .navbar ul{
     display: flex;
     align-items: center;
@@ -391,6 +391,15 @@ header .fa-bars{
     padding: 1rem 0;
     /* margin: 1rem; */
 }
+/* partenaires section modification */
+.partenaires{
+    background: #f9f9f9;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
 
 .review{
     background: #f9f9f9;
@@ -629,6 +638,11 @@ header .fa-times{
     .course .box-container{
         width: 100%;
     }
+
+    /* .sponsor .box-container{
+        width: 100%;
+    } */
+
     .contact .row{
         flex-flow: column;
     }
