@@ -50,6 +50,23 @@ $(document).ready(function () {
 });
 
 
+
+    // JavaScript to toggle the visibility of the drop-down list
+    const listItem = document.querySelector('.list');
+    const dropList = listItem.querySelector('.droplist');
+
+    listItem.addEventListener('click', function () {
+        this.classList.toggle('active');
+    });
+
+    // Hide the dropdown when scrolling
+    document.addEventListener('scroll', function() {
+        listItem.classList.remove('active');
+    });
+
+
+
+    
 // Disable right-click context menu
 document.addEventListener('contextmenu', function (event) {
   event.preventDefault();

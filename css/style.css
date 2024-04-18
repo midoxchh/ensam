@@ -3,6 +3,54 @@
     pink:#9fd3c7 ;
     violet:#142d4c ;
 } */
+
+
+/* ----------------------------------------------------- */
+    /* DROP LIST */
+    .list {
+        position: relative;
+        display: inline-block;
+    }
+
+    .list a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .list .droplist {
+        position: absolute;
+        top: 130%;
+        left: 0;
+        z-index: 9999;
+        font-size: 1.9rem;
+        width: 20rem;
+        background: #fff;
+        border-radius: 1rem;
+        padding: 1rem 0; /* Adjust padding as needed */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Optional: Add a drop shadow */
+        display: none;
+    }
+
+    .list.active .droplist {
+        display: block;
+    }
+
+    .list .droplist li {
+        list-style: none;
+    }
+
+    .list .droplist li a {
+        display: block;
+        padding: 0.5rem 1rem; /* Adjust padding as needed */
+        color: black;
+        text-decoration: none;
+    }
+
+    .list .droplist li a:hover {
+        background-color: #f0f0f0; /* Optional: Change background color on hover */
+    }
+/* --------------------------------------------------- */
+
 :root{
     --primary-color:#0a0a4b;
     --secondary-color: #197bb4;
@@ -629,6 +677,7 @@ header .fa-times{
 }
 /* media query */
 @media (max-width:857px) {
+
     html{
         font-size: 55%;
         /* transition: 1s; */
@@ -666,6 +715,30 @@ header .fa-times{
         opacity: 1;
 
     }
+/* DROP LIST MEDIA QUERY  */
+    .list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .list .droplist{
+        position: static;
+        width: 100%;
+        top: 120%;
+        z-index: 9999;
+        flex-direction: column;
+        font-size: 1.9rem;
+        background: #fff;
+        border-radius: 1rem;
+        padding: 1rem 2rem;
+        transition: .2s;
+    }
+    .list .droplist li{
+        
+    }
+
+/* ------------------------------------------------- */
 
     .home .content p{
         padding: 1.5rem 2rem;
