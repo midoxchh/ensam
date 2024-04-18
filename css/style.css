@@ -380,10 +380,13 @@ header .fa-bars{
 }
 .programme div{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
-    margin-inline: 4rem;
+    justify-content: center;
+    align-items: center;
+    margin-inline: 3rem;
 }
-.programme div .programme-container{
+.programme div .container{
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -391,18 +394,125 @@ header .fa-bars{
     flex-wrap: wrap;
     padding: 2rem 0;
 }
-.programme div .programme-container h3{
+.programme div .container h3{
     font-size: 3rem ;
     margin-block:3rem;
     text-align: center;
     font-weight: 600;
 }
-.programme div .programme-container{
+.programme div .container img{
+    object-fit: cover;
+    margin: 3rem ;
+    width: 50rem; 
     
 }
 
 /* ----------------------------------------------- */
 
+
+/* -------Compétition des étudiants ----- */
+.hhr{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8rem ;
+}
+.hhr hr{
+    width: 50%;
+
+}
+
+.Competition{
+    /* background: #fb2626; */
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.Competition h1{
+    font-size: 4rem;
+    /* background-color: #197bb4; */
+    color:var(--primary-color);
+    text-align: center;
+    padding: 0 1rem;
+    margin: 3rem;
+    padding-block: 6rem;
+    letter-spacing: .2rem;
+    font-weight: 800;
+}
+.Competition div{
+    /* background-color: rgb(83, 169, 244); */
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+}
+.Competition div .container{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+}
+.Competition div .container img{
+    height: 30rem;
+    width: 60rem;
+    object-fit: cover;
+    margin: 3rem ;
+}
+/* ----------------------------------------------- */
+
+.programme{
+    background: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.programme h1{
+    font-size: 4rem;
+    color:var(--primary-color);
+    text-align: center;
+    padding: 0 1rem;
+    margin: 3rem;
+    padding-top: 6rem;
+    letter-spacing: .2rem;
+    font-weight: 500;
+}
+.programme div{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-inline: 3rem;
+}
+.programme div .container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+}
+.programme div .container h3{
+    font-size: 3rem ;
+    margin-block:3rem;
+    text-align: center;
+    font-weight: 600;
+}
+.programme div .container img{
+    object-fit: cover;
+    margin: 3rem ;
+    width: 50rem; 
+    
+}
+
+/* ----------------------------------------------- */
 .teacher{
     background: #ffffff;
     min-height: 100vh;
