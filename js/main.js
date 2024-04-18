@@ -50,33 +50,33 @@ $(document).ready(function () {
 });
 
 
-// // Disable right-click context menu
-// document.addEventListener('contextmenu', function (event) {
-//   event.preventDefault();
-// });
+// Disable right-click context menu
+document.addEventListener('contextmenu', function (event) {
+  event.preventDefault();
+});
 
-// // Disable keyboard shortcuts (CTRL + Shift + I, CTRL + Shift + J, CTRL + Shift + C)
-// document.onkeydown = function (event) {
-//   if (event.ctrlKey &&
-//     (event.shiftKey && (event.keyCode === 73 || event.keyCode === 74 || event.keyCode === 67))
-//   ) {
-//     return false;
-//   }
-// };
+// Disable keyboard shortcuts (CTRL + Shift + I, CTRL + Shift + J, CTRL + Shift + C)
+document.onkeydown = function (event) {
+  if (event.ctrlKey &&
+    (event.shiftKey && (event.keyCode === 73 || event.keyCode === 74 || event.keyCode === 67))
+  ) {
+    return false;
+  }
+};
 
-// // Prevent inspecting elements by drag selection
-// document.addEventListener('mousedown', function (event) {
-//   if (event.button === 2) {
-//     // Right click
-//     event.preventDefault();
-//     return false;
-//   }
-// });
+// Prevent inspecting elements by drag selection
+document.addEventListener('mousedown', function (event) {
+  if (event.button === 2) {
+    // Right click
+    event.preventDefault();
+    return false;
+  }
+});
 
-// // Prevent inspecting elements using F12 key
-// window.addEventListener('keydown', function (event) {
-//   if (event.keyCode === 123) { // F12 key
-//     event.preventDefault();
-//     return false;
-//   }
-// });
+// Prevent inspecting elements using F12 key
+window.addEventListener('keydown', function (event) {
+  if (event.keyCode === 123) { // F12 key
+    event.preventDefault();
+    return false;
+  }
+});
