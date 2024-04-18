@@ -465,51 +465,45 @@ header .fa-bars{
 }
 /* ----------------------------------------------- */
 
-.programme{
-    background: #ffffff;
+.graphique{
+    /* background: #fb2626; */
     min-height: 100vh;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 }
-.programme h1{
+.graphique h1{
     font-size: 4rem;
+    /* background-color: #197bb4; */
     color:var(--primary-color);
     text-align: center;
     padding: 0 1rem;
     margin: 3rem;
-    padding-top: 6rem;
+    padding-block: 6rem;
     letter-spacing: .2rem;
-    font-weight: 500;
+    font-weight: 800;
 }
-.programme div{
+.graphique div{
+    /* background-color: rgb(83, 169, 244); */
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-inline: 3rem;
+    width: 100%;
+
 }
-.programme div .container{
+.graphique div .container{
     display:flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 2rem 0;
+    align-items: center;
+    width: 100%;
 }
-.programme div .container h3{
-    font-size: 3rem ;
-    margin-block:3rem;
-    text-align: center;
-    font-weight: 600;
-}
-.programme div .container img{
-    object-fit: cover;
+.graphique div .container img{
+    height: 30rem;
+    width: 60rem;
+    object-fit: contain;
     margin: 3rem ;
-    width: 50rem; 
-    
 }
 
 /* ----------------------------------------------- */
