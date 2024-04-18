@@ -49,24 +49,31 @@ $(document).ready(function () {
 
 });
 
+// --------------------------------------------------------
+
+const listItem = document.querySelector('.list');
+const dropList = listItem.querySelector('.droplist');
+
+listItem.addEventListener('click', function () {
+    this.classList.toggle('active');
+    if (this.classList.contains('active')) {
+        // Increase z-index when active to bring it to the front
+        dropList.style.zIndex = '9999';
+    } else {
+        // Reset z-index when not active
+        dropList.style.zIndex = '';
+    }
+});
+
+// Hide the dropdown when scrolling
+document.addEventListener('scroll', function () {
+    listItem.classList.remove('active');
+    // Reset z-index when hiding
+    dropList.style.zIndex = '';
+});
+// -------------------------------------------------------
 
 
-    // JavaScript to toggle the visibility of the drop-down list
-    const listItem = document.querySelector('.list');
-    const dropList = listItem.querySelector('.droplist');
-
-    listItem.addEventListener('click', function () {
-        this.classList.toggle('active');
-    });
-
-    // Hide the dropdown when scrolling
-    document.addEventListener('scroll', function() {
-        listItem.classList.remove('active');
-    });
-
-
-
-    
 // Disable right-click context menu
 document.addEventListener('contextmenu', function (event) {
   event.preventDefault();
@@ -96,4 +103,30 @@ window.addEventListener('keydown', function (event) {
     event.preventDefault();
     return false;
   }
+});
+
+
+
+
+
+// ------------------smooth scrolling-------------------
+
+$(document).ready(function() {
+
+  $("a").on("click", function(event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+      //animation effect
+      $("html, body").animate(
+        {
+          scrollTop: $(hash).offset().top
+        },
+        2000, //duration
+        function() {
+          window.location.hash = hash;
+        }
+      );
+    }
+  });
 });
