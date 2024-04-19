@@ -130,3 +130,35 @@ $(document).ready(function() {
     }
   });
 });
+
+
+// ----- graphique section ====
+
+document.addEventListener('DOMContentLoaded', () => {
+  const imageWrappers = document.querySelectorAll('.graphique-image-wrapper');
+  const modal = document.querySelector('.graphique-modal');
+  const modalContent = document.querySelector('.modal-content');
+  const closeModal = document.querySelector('.close');
+
+  imageWrappers.forEach(wrapper => {
+      wrapper.addEventListener('click', () => {
+          const img = wrapper.querySelector('img').cloneNode(true);
+          modalContent.src = img.src;
+          modal.classList.add('active');
+      });
+  });
+
+  closeModal.addEventListener('click', () => {
+      modal.classList.remove('active');
+  });
+
+  modal.addEventListener('click', (event) => {
+      if (event.target === modal) {
+          modal.classList.remove('active');
+      }
+  });
+
+  window.addEventListener('scroll', () => {
+      modal.classList.remove('active');
+  });
+});
