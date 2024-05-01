@@ -1013,9 +1013,15 @@ header .fa-bars{
     width: 90%;
     padding: 1rem 0;
 }
+.footer .credit a{
+    color: rgb(102, 194, 194);
+    font-size: small;
+    font-weight: 600;
+    letter-spacing: 3px ;
+}
 
 .footer .credit span{
-    color: chartreuse;
+    color: rgb(102, 194, 194);
 }
 
 
