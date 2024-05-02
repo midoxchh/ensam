@@ -16,6 +16,7 @@
 </head>
 
 <body>
+    <button onclick="scrollToTop()" id="scrollToTop" title="Go to top">↑</button>
     <!-- header section -->
     <header>
         <a href="http://ensam.um5.ac.ma/" class="logo"><img src="/image/image-removebg-preview.png" alt="test"/> </a>
@@ -79,6 +80,8 @@
             </div>
 
         </div> -->
+            <!-- memories section   -->
+
     </section>
 
 
@@ -472,43 +475,49 @@
     </section>
 
     <!-- FOOTER section  -->
-
+<!-- 
     <section class="footer" id="footer">
 
-        <div class="icons">
-            <a href="#" class="fab fa-facebook-f"></a>
-            <a href="#" class="fab fa-x"></a>
-            <a href="#" class="fab fa-instagram"></a>
-            <a href="#" class="fab fa-github"></a>
-            <a href="#" class="fab fa-linkedin"></a>
-        </div>
         <div class="credit">
             created by <br><span> <a href="https://github.com/midoxchh" class="fab fa-github"> github : mohamed mehdi chahboune</a> <br> yousef guedira </span> | all right reserved &copy
         </div>
 
-    </section>
-    <footer>
-        <svg viewBox="0 0 120 28">
-         <defs> 
-           <mask id="xxx">
-             <circle cx="7" cy="12" r="40" fill="#fff" />
-           </mask>
-             <path id="wave" d="M 0,10 C 30,10 30,15 60,15 90,15 90,10 120,10 150,10 150,15 180,15 210,15 210,10 240,10 v 28 h -240 z" />
-          </defs> 
+    </section> -->
+
+    <footer class="footer">
+        <div class="waves">
+          <div class="wave" id="wave1"></div>
+          <div class="wave" id="wave2"></div>
+          <div class="wave" id="wave3"></div>
+          <div class="wave" id="wave4"></div>
+        </div>
+        <ul class="social-icon">
+          <li class="social-icon__item"><a class="social-icon__link" href="#">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a></li>
+          <li class="social-icon__item"><a class="social-icon__link" href="#">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a></li>
+          <li class="social-icon__item"><a class="social-icon__link" href="#">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a></li>
+          <li class="social-icon__item"><a class="social-icon__link" href="#">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a></li>
+        </ul>
         
-          <g class="gooeff">
-          <circle class="drop drop1" cx="20" cy="2" r="1.8"  />
-          <circle class="drop drop2" cx="25" cy="2.5" r="1.5"  />
-          <circle class="drop drop3" cx="16" cy="2.8" r="1.2"  />
-            <use id="wave1" class="wave" xlink:href="#wave" x="0" y="1" />
-        </svg>
-        
-          <div>
+        <p>  created by : 
+            <br>
+            <br>
+            <a href="https://github.com/midoxchh">
             
-          </div>
-        </footer>
-
-
+            <i class="fab fa-github" ></i> mohamed mehdi chahboune  </a> <br>
+            <a href="#"><i class="fab fa-github" ></i> yousef guedira </a>
+            <br><br> 
+            &copy; All Rights Reserved</p>
+      </footer>
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 
 

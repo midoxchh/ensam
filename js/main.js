@@ -162,3 +162,23 @@ document.addEventListener('DOMContentLoaded', () => {
       modal.classList.remove('active');
   });
 });
+
+// -------------------------- scroll to the top button ------------------------------
+
+
+ // Function to smoothly scroll to the top of the page
+ function scrollToTop() {
+  // Scroll to the top of the page with smooth behavior
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+// Show the button when user scrolls down 20px from the top
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      document.getElementById("scrollToTop").style.display = "block";
+  } else {
+      document.getElementById("scrollToTop").style.display = "none";
+  }
+}
