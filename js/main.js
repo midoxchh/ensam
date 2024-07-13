@@ -18,21 +18,6 @@ $(document).ready(function () {
       $('header').removeClass('header-active');
     }
 
-    // $('section').each(function(){
-
-    //     var top = $(window).scrollTop();
-    //     var id = $(this).attr('id');
-    //     var height = $(this).height();
-    //     var top = $(this).offset().top - 200;
-
-    //     if(top >= offset && top < height + offset){
-    //         console.log('hello world ')
-    //         $('.navbar ul li a').removeClass('active');
-    //         $('.navbar').find('[href="#home"]').addClass('active');
-    //     }
-
-    // });
-
     $('section').each(function () {
       var top = $(window).scrollTop();
       var id = $(this).attr('id');
