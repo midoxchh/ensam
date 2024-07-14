@@ -974,62 +974,73 @@ header .fa-bars{
     width: 100%;
 }
 
-.review{
-    background:linear-gradient(to top, #f9f9f9, rgb(255, 255, 255)) ;
-    /* -----vvvvvvvv i add all of that vvvvvv ------ */
+.review {
+    background: linear-gradient(to top, #f9f9f9, rgb(255, 255, 255));
     min-height: 100vh;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    /* -----AAAAAA i add all of that AAAAAA -------- */
 }
-.review .box-container{
-    display: flex ;
+
+.review .box-container {
+    display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 4rem ;
+    padding-top: 4rem;
     flex-wrap: wrap;
 }
+
 .review .box-container .box {
-    width: 28rem;
-    height: 22rem; 
+    width: calc(50% - 4rem); /* Two boxes per row with spacing */
+    max-width: 28rem; /* Limit maximum width */
+    height: 22rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
     padding-bottom: 1rem;
     text-align: center;
-    box-shadow: 0 .3rem .5rem rgba(0, 0 ,0, .3);
+    box-shadow: 0 .3rem .5rem rgba(0, 0, 0, .3);
     background: #ffffff;
-    margin: 4rem 2rem;
+    margin: 2rem; /* Adjust margin as needed */
 }
-.review .box-container .box img{
+
+.review .box-container .box img {
     height: 8.5rem;
     width: 8.5rem;
     object-fit: cover;
-    border-radius:50%;
+    border-radius: 50%;
     margin-top: -4rem;
     border: .6rem solid var(--primary-color);
     border-left: .6rem solid var(--secondary-color);
     border-bottom: .6rem solid var(--secondary-color);
-
 }
 
-.review .box-container .box h3{
+.review .box-container .box h3 {
     font-size: 2rem;
     color: var(--primary-color);
     padding: 0 .5rem;
 }
-.review .box-container .box p{
+
+.review .box-container .box p {
     font-size: 1.4rem;
     color: #999;
-    padding:0 1.3rem;
+    padding: 0 1.3rem;
 }
-.review .box-container .box .stars i{
+
+.review .box-container .box .stars i {
     font-size: 1.6rem;
     color: var(--secondary-color);
     padding: 1.3rem .1rem;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    .review .box-container .box {
+        width: calc(50% - 4rem); /* Two boxes per row with spacing */
+        margin: 2rem; /* Adjust margin for spacing */
+    }
 }
 
 
