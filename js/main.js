@@ -198,3 +198,48 @@ function scrollFunction() {
       document.getElementById("scrollToTop").style.display = "none";
   }
 }
+
+
+
+// ------------------- sned msg -----------------------------
+
+
+// document.getElementById('contact-form').addEventListener('submit', function(event) {
+//   event.preventDefault(); // Prevent the form from submitting
+
+//   // Display the success message
+//   var successMessage = document.getElementById('success-message');
+//   successMessage.style.display = 'block';
+
+//   // Clear the form inputs
+//   document.getElementById('full-name').value = '';
+//   document.getElementById('email').value = '';
+//   document.getElementById('phone').value = '';
+//   document.getElementById('message').value = '';
+
+//   // Hide the success message after 3 seconds
+//   setTimeout(function() {
+//       successMessage.style.display = 'none';
+//   }, 3000); // 3000 milliseconds = 3 seconds
+// });
+
+// -----------------------------------------------------------
+
+document.addEventListener('DOMContentLoaded', function() {
+  document.getElementById('send-button').addEventListener('click', function() {
+      // Display the success message
+      var successMessage = document.getElementById('success-message');
+      successMessage.style.display = 'block';
+
+      // Clear the form inputs (if needed)
+      document.getElementById('full-name').value = '';
+      document.getElementById('email').value = '';
+      document.getElementById('phone').value = '';
+      document.getElementById('message').value = '';
+
+      // Optional: Hide the success message after 5 seconds
+      setTimeout(function() {
+          successMessage.style.display = 'none';
+      }, 5000); // 5000 milliseconds = 5 seconds
+  });
+});

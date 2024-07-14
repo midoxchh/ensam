@@ -471,20 +471,19 @@
                 <img src="/image/Mobile Marketing-bro.svg" alt="Contact Us">
             </div>
             <div class="form-container">
-                <form id="contact-form" name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/.netlify/functions/submit-contact-form">
-                    <input type="hidden" name="form-name" value="contact">
-                    <input type="hidden" name="bot-field">
-                    <input type="hidden" name="g-recaptcha-response" id="g-recaptcha-response">
+                <div id="success-message" class="success-message" style="display: none;">Message sent successfully!</div>
+                <form id="contact-form" name="contact" action="#contact">
                     <input type="text" id="full-name" name="name" placeholder="Full Name" required>
                     <input type="email" id="email" name="email" placeholder="Enter your email" required>
                     <input type="tel" id="phone" name="phone" placeholder="Phone Number" required pattern="[0-9]{10}">
                     <textarea id="message" name="message" cols="30" rows="10" placeholder="Enter your message here" required></textarea>
-                    <div id="captcha-container" class="g-recaptcha" data-sitekey="6Lchiw8qAAAAABPJFmueo-GRHaz-e0fr699DO9lS"></div>
-                    <input type="submit" value="Send">
+                    <input type="submit" id="send-button"></input>
                 </form>
             </div>
         </div>
     </section>
+    
+    
     
     
 
