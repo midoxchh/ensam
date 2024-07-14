@@ -36,6 +36,21 @@ $(document).ready(function () {
 
 // --------------------------------------------------------
 
+
+    document.addEventListener('DOMContentLoaded', function () {
+        const reviewTexts = document.querySelectorAll('.review-text');
+
+        reviewTexts.forEach(text => {
+            text.addEventListener('click', function () {
+                this.classList.toggle('expanded');
+            });
+        });
+    });
+
+
+
+// --------------------------------------------------------
+
 const listItem = document.querySelector('.list');
 const dropList = listItem.querySelector('.droplist');
 

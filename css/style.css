@@ -979,22 +979,23 @@ header .fa-bars{
     min-height: 100vh;
     display: flex;
     justify-content: center;
-    flex-direction: column;
     align-items: center;
+    flex-direction: column; /* Center content vertically */
 }
 
 .review .box-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 4rem;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start; /* Align items to start of flex container */
+    gap: 2rem; /* Spacing between boxes */
+    padding: 4rem 2rem; /* Adjust padding around container */
 }
 
-.review .box-container .box {
+.review .box {
     width: calc(50% - 4rem); /* Two boxes per row with spacing */
     max-width: 28rem; /* Limit maximum width */
-    height: 22rem;
+    height: 22rem; /* Fixed height for each box */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1003,10 +1004,10 @@ header .fa-bars{
     text-align: center;
     box-shadow: 0 .3rem .5rem rgba(0, 0, 0, .3);
     background: #ffffff;
-    margin: 2rem; /* Adjust margin as needed */
+    margin-block: 2rem; /* Adjust margin between boxes */
 }
 
-.review .box-container .box img {
+.review .box img {
     height: 8.5rem;
     width: 8.5rem;
     object-fit: cover;
@@ -1017,32 +1018,43 @@ header .fa-bars{
     border-bottom: .6rem solid var(--secondary-color);
 }
 
-.review .box-container .box h3 {
+.review .box h3 {
     font-size: 2rem;
     color: var(--primary-color);
     padding: 0 .5rem;
+    margin-top: 1rem; /* Adjust margin for spacing */
 }
 
-.review .box-container .box p {
+.review .box p {
     font-size: 1.4rem;
     color: #999;
     padding: 0 1.3rem;
+    overflow: hidden; /* Hide overflow content */
+    text-overflow: ellipsis; /* Show ellipsis for overflow */
+    display: -webkit-box; /* For compatibility with some browsers */
+    -webkit-line-clamp: 3; /* Limit text to 3 lines */
+    -webkit-box-orient: vertical; /* Vertical layout */
 }
 
-.review .box-container .box .stars i {
+.review .box .stars i {
     font-size: 1.6rem;
     color: var(--secondary-color);
     padding: 1.3rem .1rem;
 }
 
-/* Media query for mobile devices */
-@media (max-width: 768px) {
-    .review .box-container .box {
-        width: calc(50% - 4rem); /* Two boxes per row with spacing */
-        margin: 2rem; /* Adjust margin for spacing */
-    }
+.review .box p.expanded {
+    -webkit-line-clamp: unset; /* Remove line clamp for expanded state */
+    overflow: auto; /* Allow scrolling for expanded text */
 }
 
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .review .box {
+        width: calc(50% - 1rem); /* Two boxes per row with spacing */
+        margin-bottom: 1rem; /* Adjust margin between boxes */
+    }
+}
 
 
 .contact{
