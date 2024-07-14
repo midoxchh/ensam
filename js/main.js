@@ -90,36 +90,36 @@ document.addEventListener('scroll', function () {
 // -------------------------------------------------------
 
 
-// // Disable right-click context menu
-// document.addEventListener('contextmenu', function (event) {
-//   event.preventDefault();
-// });
+// Disable right-click context menu
+document.addEventListener('contextmenu', function (event) {
+  event.preventDefault();
+});
 
-// // Disable keyboard shortcuts (CTRL + Shift + I, CTRL + Shift + J, CTRL + Shift + C)
-// document.onkeydown = function (event) {
-//   if (event.ctrlKey &&
-//     (event.shiftKey && (event.keyCode === 73 || event.keyCode === 74 || event.keyCode === 67))
-//   ) {
-//     return false;
-//   }
-// };
+// Disable keyboard shortcuts (CTRL + Shift + I, CTRL + Shift + J, CTRL + Shift + C)
+document.onkeydown = function (event) {
+  if (event.ctrlKey &&
+    (event.shiftKey && (event.keyCode === 73 || event.keyCode === 74 || event.keyCode === 67))
+  ) {
+    return false;
+  }
+};
 
-// // Prevent inspecting elements by drag selection
-// document.addEventListener('mousedown', function (event) {
-//   if (event.button === 2) {
-//     // Right click
-//     event.preventDefault();
-//     return false;
-//   }
-// });
+// Prevent inspecting elements by drag selection
+document.addEventListener('mousedown', function (event) {
+  if (event.button === 2) {
+    // Right click
+    event.preventDefault();
+    return false;
+  }
+});
 
-// // Prevent inspecting elements using F12 key
-// window.addEventListener('keydown', function (event) {
-//   if (event.keyCode === 123) { // F12 key
-//     event.preventDefault();
-//     return false;
-//   }
-// });
+// Prevent inspecting elements using F12 key
+window.addEventListener('keydown', function (event) {
+  if (event.keyCode === 123) { // F12 key
+    event.preventDefault();
+    return false;
+  }
+});
 
 
 
@@ -203,28 +203,6 @@ function scrollFunction() {
 
 // ------------------- sned msg -----------------------------
 
-
-// document.getElementById('contact-form').addEventListener('submit', function(event) {
-//   event.preventDefault(); // Prevent the form from submitting
-
-//   // Display the success message
-//   var successMessage = document.getElementById('success-message');
-//   successMessage.style.display = 'block';
-
-//   // Clear the form inputs
-//   document.getElementById('full-name').value = '';
-//   document.getElementById('email').value = '';
-//   document.getElementById('phone').value = '';
-//   document.getElementById('message').value = '';
-
-//   // Hide the success message after 3 seconds
-//   setTimeout(function() {
-//       successMessage.style.display = 'none';
-//   }, 3000); // 3000 milliseconds = 3 seconds
-// });
-
-// -----------------------------------------------------------
-
 document.addEventListener('DOMContentLoaded', function() {
   document.getElementById('send-button').addEventListener('click', function() {
       // Display the success message
@@ -240,6 +218,6 @@ document.addEventListener('DOMContentLoaded', function() {
       // Optional: Hide the success message after 5 seconds
       setTimeout(function() {
           successMessage.style.display = 'none';
-      }, 5000); // 5000 milliseconds = 5 seconds
+      }, 3000); // 5000 milliseconds = 5 seconds
   });
 });

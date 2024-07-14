@@ -51,15 +51,19 @@
 
     <!-- home section   -->
     <section class="home" id="home">
+        <video class="background-video" autoplay loop muted>
+            <source src="./image/VIDEO_FORUM_ANIMATION/FORUM_VID_ANNIMATION.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
         <div class="content">
             <h1>FORUM INDUSTRIEL DE L'ENSAM-RABAT</h1>
             <p>
                 Dans ce contexte, l'ENSAM Rabat organise le Forum International pour l'Innovation et l'Industrie pour
                 ancrer la collaboration entre les écosystèmes d'innovation académiques et les organismes de l'industrie,
-                mettant l'accent sur leurs relations formelles avec les acteurs étatiques et non étatiques.</p>
+                mettant l'accent sur leurs relations formelles avec les acteurs étatiques et non étatiques.
+            </p>
             <a href="#about"><button>En savoir plus</button></a>
         </div>
-
     </section>
 
 
@@ -471,13 +475,13 @@
                 <img src="/image/Mobile Marketing-bro.svg" alt="Contact Us">
             </div>
             <div class="form-container">
-                <div id="success-message" class="success-message" style="display: none;">Message sent successfully!</div>
-                <form id="contact-form" name="contact" action="#contact">
-                    <input type="text" id="full-name" name="name" placeholder="Full Name" required>
-                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
-                    <input type="tel" id="phone" name="phone" placeholder="Phone Number" required pattern="[0-9]{10}">
-                    <textarea id="message" name="message" cols="30" rows="10" placeholder="Enter your message here" required></textarea>
-                    <input type="submit" id="send-button"></input>
+                <form id="contact-form" action="https://formsubmit.co/nojefi1332@apn7.com" method="POST">
+                    <input type="text"  name="name" placeholder="nom complet" required>
+                    <input type="email" name="email" placeholder="address email" required>
+                    <input type="tel" name="phone" placeholder="numero de telephone" required pattern="[0-9]{10}">
+                    <textarea name="message" cols="30" rows="10" placeholder="votre message " required></textarea>
+                    <div id="success-message" class="success-message" style="display: none;">Message sent successfully!</div>
+                    <button type="submit" id="send-button">envoyer </button>
                 </form>
             </div>
         </div>
@@ -488,15 +492,7 @@
     
 
     <!-- FOOTER section  -->
-    <!-- 
-    <section class="footer" id="footer">
-
-        <div class="credit">
-            created by <br><span> <a href="https://github.com/midoxchh" class="fab fa-github"> github : mohamed mehdi chahboune</a> <br> yousef guedira </span> | all right reserved &copy
-        </div>
-
-    </section> -->
-
+ 
     <footer class="footer">
         <div class="waves">
             <div class="wave" id="wave1"></div>
