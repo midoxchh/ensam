@@ -32,13 +32,13 @@
                         <li><a href="#graphique">Logo et charte graphique</a></li>
                         <li><a href="#evenement_prev_ENSAM">Evenements saillants ENSAM Rabat</a></li>
                         <li><a href="#evenement_prev_CCIS">Evenements saillants CCIS-RSK</a></li>
-                        <li><a href="#">Fiche de partenariat </a></li>
-                        <li><a href="#sponsor">Dossier de sponsoring </a></li>
-                        <li><a href="#">Liste des invités 1 et 2 </a></li>
+                        <!-- <li><a href="#">Fiche de partenariat </a></li> -->
+                        <li><a href="#sponsor">sponsores </a></li>
+                        <!-- <li><a href="#">Liste des invités 1 et 2 </a></li> -->
                     </ul>
                 </li>
                 <!-- <li><a href="#teacher"> Gestion</a></li> -->
-                <li><a href="#course">Activités</a></li>
+                <li><a href="#Activites">Activités</a></li>
                 <li><a href="#review">Révision</a></li>
                 <li><a href="#contact">Contact</a></li>
 
@@ -59,30 +59,6 @@
                 mettant l'accent sur leurs relations formelles avec les acteurs étatiques et non étatiques.</p>
             <a href="#about"><button>En savoir plus</button></a>
         </div>
-        <!-- ---------------- -->
-        <!-- <div class="box-container">
-
-            <div class="box">
-                <a class="fa fa-calendar-plus" href="#course1"></a>
-                <h3>JOUR 1</h3>
-
-                <p> - ceremonie d'ouverture -</p>
-                <p> - aeronautique et automobile X.O industry -</p>
-                <p>- sante digitale healthcare & AI -</p>
-
-            </div>
-
-            <div class="box">
-                <a class="fa fa-calendar-plus" href="#course2"></a>
-                <h3>JOUR 2</h3>
-
-                <p>- energie -</p>
-                <p>- eau et environnement -</p>
-
-            </div>
-
-        </div> -->
-        <!-- memories section   -->
 
     </section>
 
@@ -115,7 +91,7 @@
                     publics producteurs de connaissances.
 
                 </p>
-                <a href="#course"><button>en savoir plus</button></a>
+                <a href="#Activites"><button>en savoir plus</button></a>
             </div>
             <div class="image">
                 <img src="/image/logo-forum.png" alt="">
@@ -156,15 +132,15 @@
 
     <section class="programme" id="programme">
 
-        <h1>Programme de la conference</h1>
+        <h1><b>Programme de la conference : </b></h1>
         <div>
             <div class="container">
-                <h3 class="title">jour 1 </h3>
+                <h3 class="title">  </h3>
                 <img src="image/dossier_sponsoring_finals_page-0021.jpg">
             </div>
 
             <div class="container">
-                <h3 class="title">jour 2 </h3>
+                <h3 class="title">  </h3>
                 <img src="image/dossier_sponsoring_finals_page-0022.jpg">
             </div>
         </div>
@@ -177,7 +153,7 @@
     <!-- Competition section  -->
 
     <section class="Competition" id="Competition">
-        <h1>Compétition des étudiants</h1>
+        <h1><b>Compétition des étudiants :</b></h1>
         <div>
             <div class="container">
                 <img src="image/car1.JPG">
@@ -218,7 +194,7 @@
 
     <!--  saillants ENSAM  -->
     <section class="evenement_prev" id="evenement_prev_ENSAM">
-        <h1>Evenements saillants ENSAM Rabat</h1>
+        <h1><b>Evenements saillants ENSAM Rabat</b></h1>
         <div>
             <div class="container">
                 <img src="image/image sponsoring/dossier_sponsoring_finals_page-0009.jpg" alt="Event Image 1">
@@ -233,7 +209,7 @@
     <!--  saillants ENSAM   --------------------------------------------->
     <section class="evenement_prev" id="evenement_prev_CCIS">
         <!--  -->
-        <h1>Evenements saillants CCIS-RSK</h1>
+        <h1><b>Evenements saillants CCIS-RSK</b></h1>
         <div>
             <div class="container">
                 <img src="image/image sponsoring/dossier_sponsoring_finals_page-0011.jpg">
@@ -279,7 +255,7 @@
 
 
     <section class="sponsor" id="sponsor">
-        <h1> sponsor </h1>
+        <h1> sponsores </h1>
         <div>
             <div class="container">
                 <img src="sposorship logos/sponsorship.JPG">
@@ -287,13 +263,13 @@
         </div>
     </section>
 
-    <!-- course section  -->
-    <section class="course" id="course">
+    <!-- Activites section  -->
+    <section class="Activites" id="Activites">
 
         <h1 class="heading">Nos activités : </h1>
         <br>
         <br>
-        <h3 class="title" id="course1"></h3>
+        <h3 class="title" id="Activites1"></h3>
 
         <div class="box-container">
 
@@ -327,7 +303,7 @@
         <!-- <h1 class="heading">nos activities</h1> -->
         <br>
         <br>
-        <h3 class="title" id="course2"></h3>
+        <h3 class="title" id="Activites2"></h3>
 
         <div class="box-container">
 
@@ -492,19 +468,25 @@
     <section class="contact" id="contact">
         <div class="row">
             <div class="image">
-                <img src="/image/Mobile Marketing-bro.svg" alt="">
+                <img src="/image/Mobile Marketing-bro.svg" alt="Contact Us">
             </div>
             <div class="form-container">
-                <form action="">
-                    <input type="text" placeholder="full name">
-                    <input type="email" placeholder="enter your email">
-                    <input type="number" placeholder="phone number">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="enter your message here    "></textarea>
-                    <input type="submit" value="send">
+                <form id="contact-form" name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/.netlify/functions/submit-contact-form">
+                    <input type="hidden" name="form-name" value="contact">
+                    <input type="hidden" name="bot-field">
+                    <input type="hidden" name="g-recaptcha-response" id="g-recaptcha-response">
+                    <input type="text" id="full-name" name="name" placeholder="Full Name" required>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    <input type="tel" id="phone" name="phone" placeholder="Phone Number" required pattern="[0-9]{10}">
+                    <textarea id="message" name="message" cols="30" rows="10" placeholder="Enter your message here" required></textarea>
+                    <div id="captcha-container" class="g-recaptcha" data-sitekey="6Lchiw8qAAAAABPJFmueo-GRHaz-e0fr699DO9lS"></div>
+                    <input type="submit" value="Send">
                 </form>
             </div>
         </div>
     </section>
+    
+    
 
     <!-- FOOTER section  -->
     <!-- 
@@ -547,23 +529,23 @@
             &copy; All Rights Reserved
         </p>
     </footer>
+
+
+
+    
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
-
-
-
-
-
-
-
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
     <!-- jquery cdn link -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"></script>
     <!-- custome js file link  -->
     <script src="js/javascript.js"></script>
+    <script src="js/recapcha.js"></script>
 </body>
 
 </html>

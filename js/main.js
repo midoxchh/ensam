@@ -33,8 +33,24 @@ $(document).ready(function () {
   });
 
 });
+// -----------------------------hide comments ---------------------------
 
-// --------------------------------------------------------
+document.addEventListener('DOMContentLoaded', () => {
+  function removeComments(node) {
+      for (let i = 0; i < node.childNodes.length; i++) {
+          const child = node.childNodes[i];
+          if (child.nodeType === Node.COMMENT_NODE) {
+              node.removeChild(child);
+              i--; // Adjust index after removal
+          } else if (child.nodeType === Node.ELEMENT_NODE) {
+              removeComments(child);
+          }
+      }
+  }
+
+  removeComments(document);
+});
+// -----------------------------review text expend ---------------------------
 
 
     document.addEventListener('DOMContentLoaded', function () {

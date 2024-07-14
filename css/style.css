@@ -3,6 +3,9 @@
     pink:#9fd3c7 ;
     violet:#142d4c ;
 } */
+.hidden-comment {
+    display: none;
+}
 
 #scrollToTop {
     display: none; /* Hide the button by default */
@@ -882,7 +885,7 @@ header .fa-bars{
         }
     }
 
-    .course {
+    .Activites {
         min-height: 100vh;
         display: flex;
         justify-content: center;
@@ -890,7 +893,7 @@ header .fa-bars{
         align-items: center;
     }
     
-    .course .box-container {
+    .Activites .box-container {
         width: 85%;
         display: flex;
         justify-content: center;
@@ -899,7 +902,7 @@ header .fa-bars{
         flex-wrap: wrap;
     }
     
-    .course .box-container .box {
+    .Activites .box-container .box {
         cursor: pointer;
         width: 25rem;
         margin: 3.5rem 2rem;
@@ -909,7 +912,7 @@ header .fa-bars{
         box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
     }
     
-    .course .box-container .box i {
+    .Activites .box-container .box i {
         height: 10rem;
         width: 10rem;
         line-height: 8rem;
@@ -925,18 +928,18 @@ header .fa-bars{
         font-size: 3.5rem;
     }
     
-    .course .box-container .box:hover i {
+    .Activites .box-container .box:hover i {
         background: var(--secondary-color);
         border-left: 1rem solid var(--secondary-color);
         border-right: 1rem solid var(--secondary-color);
     }
     
-    .course .box-container .box h3 {
+    .Activites .box-container .box h3 {
         font-size: 2rem;
         color: var(--primary-color);
     }
     
-    .course .box-container .box p {
+    .Activites .box-container .box p {
         font-size: 1.5rem;
         color: #999;
         padding: 1rem 0;
@@ -944,11 +947,11 @@ header .fa-bars{
     
     /* Media Query for responsive design */
     @media (max-width: 768px) {
-        .course .box-container {
+        .Activites .box-container {
             justify-content: space-around;
         }
     
-        .course .box-container .box {
+        .Activites .box-container .box {
             width: 45%;
             margin: 2rem 1rem;
         }
@@ -1431,7 +1434,7 @@ header .fa-times{
     }
     
     
-    .course .box-container{
+    .Activites .box-container{
         width: 100%;
     }
 
